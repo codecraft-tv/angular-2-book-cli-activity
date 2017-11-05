@@ -1,14 +1,14 @@
-import { @activityPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('@activity App', function() {
-  let page: @activityPage;
+describe('activity App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new @activityPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
